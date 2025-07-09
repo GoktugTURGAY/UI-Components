@@ -1,0 +1,50 @@
+<section
+  style="
+    --padding: 10px;
+    --duration: 400ms;
+    --color-dark: #000;
+    --offcanvas-bg: #000;
+    --offcanvas-width: 300px;
+  "
+>
+  <button
+    class="peer absolute top-2 left-2 z-50"
+    style="
+      --width: 30px;
+      --height: 4px;
+      --gap: 4px;
+      --origin: left center;
+      --total-height: calc(var(--height) * 3 + var(--gap) * 2);
+      --x-width: calc(var(--total-height) * 1.414213);
+    "
+    type="button"
+    aria-label="Toggle mobile menu"
+    aria-controls="mobile-menu"
+    aria-expanded="false"
+  >
+    <label
+      class="z-50 box-content inline-flex cursor-pointer flex-col gap-(--gap) p-(--padding) text-center before:inline-block before:h-(--height) before:w-(--width) before:origin-(--origin) before:rounded-full before:bg-(--color-dark) before:transition-transform before:duration-(--duration) before:ease-in-out before:content-[''] after:inline-block after:h-(--height) after:w-(--width) after:origin-(--origin) after:rounded-full after:bg-(--color-dark) after:transition-transform after:duration-(--duration) after:ease-in-out after:content-[''] has-checked:before:w-(--x-width) has-checked:before:translate-y-[calc(var(--height)/-2)] has-checked:before:rotate-45 has-checked:before:bg-white has-checked:after:w-(--x-width) has-checked:after:translate-y-[calc(var(--height)/2)] has-checked:after:-rotate-45 has-checked:after:bg-white"
+    >
+      <input
+        class="pointer-events-none inline-block h-(--height) w-(--width) appearance-none rounded-full bg-(--color-dark) transition-all duration-(--duration) ease-in-out outline-none checked:w-0 checked:opacity-0"
+        type="checkbox"
+      />
+    </label>
+  </button>
+
+  <aside
+    id="mobile-menu"
+    class="absolute top-0 z-45 h-screen w-(--offcanvas-width) -translate-x-full bg-(--offcanvas-bg) px-2 text-(--color-dark) transition-transform duration-(--duration) peer-has-checked:translate-x-0 peer-has-checked:text-white"
+  >
+    <nav class="py-16">
+      <ul class="flex flex-col gap-4 px-(--padding)">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+      </ul>
+    </nav>
+  </aside>
+</section>
