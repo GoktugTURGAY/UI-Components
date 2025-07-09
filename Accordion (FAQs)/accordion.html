@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="accordion.js"></script>
+    <link rel="stylesheet" href="accordion.css" />
+    <title>Frequently Asked Questions (FAQs)</title>
+  </head>
+  <body>
+    <main>
+      <section class="FAQs">
+        <div class="wrapper">
+          <article class="FAQ active">
+            <h3 class="FAQ-title">
+              <button
+                class="FAQ-controls"
+                type="button"
+                aria-controls="FAQ-body-1"
+                aria-expanded="true"
+              >
+                <span class="FAQ-title-text"
+                  >Can I track my order after purchasing?</span
+                >
+                <span class="FAQ-title-icon" aria-hidden="true">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </h3>
+
+            <section class="FAQ-body" id="FAQ-body-1">
+              <p class="FAQ-body-text">
+                Yes! Once your order is processed and shipped, you'll receive a
+                confirmation email with a tracking number and link. You can use
+                that to track your package in real-time.
+              </p>
+            </section>
+          </article>
+
+          <article class="FAQ">
+            <h3 class="FAQ-title">
+              <button
+                class="FAQ-controls"
+                type="button"
+                aria-controls="FAQ-body-2"
+                aria-expanded="false"
+              >
+                <span class="FAQ-title-text"
+                  >What if I receive a damaged or incorrect item?</span
+                >
+                <span class="FAQ-title-icon" aria-hidden="true">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </h3>
+
+            <section class="FAQ-body" id="FAQ-body-2">
+              <p class="FAQ-body-text">
+                We’re sorry if that happens! Please contact our support team
+                within 7 days of delivery with photos of the item and packaging.
+                We’ll arrange a replacement or full refund as quickly as
+                possible.
+              </p>
+            </section>
+          </article>
+
+          <article class="FAQ">
+            <h3 class="FAQ-title">
+              <button
+                class="FAQ-controls"
+                type="button"
+                aria-controls="FAQ-body-3"
+                aria-expanded="false"
+              >
+                <span class="FAQ-title-text"
+                  >Do you offer customer support on weekends?</span
+                >
+                <span class="FAQ-title-icon" aria-hidden="true">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </h3>
+
+            <section class="FAQ-body" id="FAQ-body-3">
+              <p class="FAQ-body-text">
+                Yes, our support team is available 7 days a week. Weekend
+                support hours are limited, typically from 9 AM to 5 PM (local
+                time). You can reach us via email, chat, or phone during those
+                hours.
+              </p>
+            </section>
+          </article>
+
+          <article class="FAQ">
+            <h3 class="FAQ-title">
+              <button
+                class="FAQ-controls"
+                type="button"
+                aria-controls="FAQ-body-4"
+                aria-expanded="false"
+              >
+                <span class="FAQ-title-text"
+                  >Is my payment information secure on your website?</span
+                >
+                <span class="FAQ-title-icon" aria-hidden="true">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </h3>
+
+            <section class="FAQ-body" id="FAQ-body-4">
+              <p class="FAQ-body-text">
+                Absolutely. We use industry-standard encryption (SSL) and work
+                with trusted payment gateways to ensure your personal and
+                payment information is always secure.
+              </p>
+            </section>
+          </article>
+
+          <article class="FAQ">
+            <h3 class="FAQ-title">
+              <button
+                class="FAQ-controls"
+                type="button"
+                aria-controls="FAQ-body-5"
+                aria-expanded="false"
+              >
+                <span class="FAQ-title-text"
+                  >Can I use multiple discount codes on one order?</span
+                >
+                <span class="FAQ-title-icon" aria-hidden="true">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </button>
+            </h3>
+
+            <section class="FAQ-body" id="FAQ-body-5">
+              <p class="FAQ-body-text">
+                No, unfortunately only one discount or promo code can be applied
+                per order. If you have multiple codes, you can choose the one
+                with the highest value at checkout.
+              </p>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
