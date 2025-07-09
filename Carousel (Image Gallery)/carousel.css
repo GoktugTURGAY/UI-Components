@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --active-width: 16;
+  --transition-md: 800ms ease-in-out;
+  --caption-delay: 300ms;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gallery {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 150rem;
+  margin-inline: auto;
+  height: 90vh;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.figure {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  border: 0.2px solid #000;
+  transition: flex var(--transition-md);
+}
+
+.figure-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.figure-caption {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.figure.active {
+  flex: var(--active-width);
+}
+
+.figure.active .figure-caption {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity var(--transition-md),
+    visibility var(--transition-md);
+  transition-delay: var(--caption-delay);
+}
