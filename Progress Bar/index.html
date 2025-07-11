@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Progress Bar</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="progress-bar">
+        <div class="progress-icons">
+          <i class="progress-icon active fa-solid fa-cart-plus"></i>
+          <i class="progress-icon fa-solid fa-file-invoice"></i>
+          <i class="progress-icon fa-solid fa-credit-card"></i>
+          <i class="progress-icon fa-solid fa-bars-progress"></i>
+          <i class="progress-icon fa-solid fa-box"></i>
+          <i class="progress-icon fa-solid fa-clipboard-check"></i>
+        </div>
+
+        <div class="progress-steps">
+          <div class="progress" id="progress"></div>
+          <div class="progress-step active">
+            <span><i class="fa-solid fa-check"></i></span> <span>1</span>
+          </div>
+          <div class="progress-step">
+            <span><i class="fa-solid fa-check"></i></span> <span>2</span>
+          </div>
+          <div class="progress-step">
+            <span><i class="fa-solid fa-check"></i></span> <span>3</span>
+          </div>
+          <div class="progress-step">
+            <span><i class="fa-solid fa-check"></i></span> <span>4</span>
+          </div>
+          <div class="progress-step">
+            <span><i class="fa-solid fa-check"></i></span> <span>5</span>
+          </div>
+          <div class="progress-step">
+            <span><i class="fa-solid fa-check"></i></span> <span>6</span>
+          </div>
+        </div>
+
+        <div class="progress-texts">
+          <p class="progress-text">Add to Cart</p>
+          <p class="progress-text">Fill Details</p>
+          <p class="progress-text">Make Payment</p>
+          <p class="progress-text">Order in Progress</p>
+          <p class="progress-text">Order Prepared</p>
+          <p class="progress-text">Order Delivered</p>
+        </div>
+      </div>
+
+      <div class="btns-wrapper">
+        <button class="btn" id="btn-prev" type="button" disabled>Prev</button>
+        <button class="btn" id="btn-next" type="button">Next</button>
+      </div>
+    </div>
+  </body>
+</html>
