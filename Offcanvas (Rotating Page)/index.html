@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Rotating Project</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="circle">
+        <button
+          aria-label="Open side navigation"
+          aria-controls="page-nav"
+          type="button"
+          class="btn"
+          id="btn-show"
+        >
+          <i aria-hidden="true" class="fas fa-bars fa-2x"></i>
+        </button>
+        <button
+          aria-label="Close side navigation"
+          aria-controls="page-nav"
+          type="button"
+          class="btn"
+          id="btn-hide"
+        >
+          <i aria-hidden="true" class="fas fa-times fa-2x"></i>
+        </button>
+      </div>
+
+      <nav aria-expanded="false" class="page-nav" id="page-nav">
+        <ul class="page-nav-list">
+          <li class="page-nav-item">
+            <a href="#" class="page-nav-link">
+              <i class="fas fa-home fa-2x"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="page-nav-item">
+            <a href="#" class="page-nav-link">
+              <i class="fas fa-hippo fa-2x"></i>
+              <span>Species</span>
+            </a>
+          </li>
+          <li class="page-nav-item">
+            <a href="#" class="page-nav-link">
+              <i class="fas fa-building-columns fa-2x"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="page-nav-item">
+            <a href="#" class="page-nav-link">
+              <i class="fas fa-address-card fa-2x"></i>
+              <span>About</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrapper">
+          <header class="hero-header">
+            <h2 class="hero-title">Dinosaurs</h2>
+            <span class="hero-subtitle">Reptilians</span>
+          </header>
+          <article class="hero-body">
+            <h3 class="hero-body-title">What is a Dinosaur?</h3>
+            <figure class="figure">
+              <img src="dinosaur.jpg" alt="A Dinosaur" class="figure-img" />
+              <figcaption class="figure-caption">
+                &mdash; Figure 1.1. A Horned Dinosaur
+              </figcaption>
+            </figure>
+            <p class="hero-body-text">
+              <dfn>Dinosaurs</dfn> are a diverse group of reptiles of the clade
+              Dinosauria. They first appeared during the Triassic period,
+              between <time>243</time> and <time>233.23</time> million years ago
+              (<abbr>mya</abbr>), although the exact origin and timing of the
+              evolution of dinosaurs is a subject of active research.
+            </p>
+            <p class="hero-body-text">
+              They became the dominant terrestrial vertebrates after the
+              Triassic–Jurassic extinction event <time>201.3</time> mya and
+              their dominance continued throughout the Jurassic and Cretaceous
+              periods.
+            </p>
+          </article>
+
+          <article class="hero-body">
+            <h3 class="hero-body-title">Anatomical Features</h3>
+            <p class="hero-body-text">
+              While recent discoveries have made it more difficult to present a
+              universally agreed-upon list of their distinguishing features,
+              nearly all dinosaurs discovered so far share certain modifications
+              to the ancestral archosaurian skeleton, or are clearly descendants
+              of older dinosaurs showing these modifications.
+            </p>
+            <p class="hero-body-text">
+              Although some later groups of dinosaurs featured further modified
+              versions of these traits, they are considered typical for
+              Dinosauria; the earliest dinosaurs had them and passed them on to
+              their descendants. Such modifications, originating in the most
+              recent common ancestor of a certain taxonomic group, are called
+              the <i>synapomorphies</i> of such a group.
+            </p>
+
+            <ul class="hero-list">
+              <li class="hero-item"><i>Supratemporal Fossa</i></li>
+              <li class="hero-item"><i>Epipophyses</i></li>
+              <li class="hero-item"><i>Apex of a Deltopectoral Crest</i></li>
+              <li class="hero-item"><i>Fourth Trochanter</i></li>
+              <li class="hero-item"><i>Radius</i></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

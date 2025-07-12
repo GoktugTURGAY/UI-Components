@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-clr: #aa8746;
+  --transition: 500ms linear;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+span,
+img,
+button {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+
+.page-header .circle {
+  position: fixed;
+  inset: -12.5rem auto auto -12.5rem;
+  z-index: 9999;
+  background-color: var(--primary-clr);
+  height: 25rem;
+  aspect-ratio: 1;
+  border-radius: 9999px;
+  transition: rotate var(--transition);
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  inset: 62% auto auto 62%;
+  padding: 1rem;
+}
+
+.btn:last-child {
+  left: 5rem;
+}
+
+.hero {
+  color: #111;
+  background-color: #fff;
+  transform-origin: top left;
+  transition: rotate var(--transition);
+}
+
+.wrapper {
+  max-width: 120rem;
+  margin-inline: auto;
+  padding-block: 14rem;
+  padding-inline: 4rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-body-title {
+  font-size: 2.2rem;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
+.figure {
+  margin-bottom: 1rem;
+}
+
+.figure-caption {
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+.hero-body-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.hero-body-text:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.hero-body-text:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.hero-list {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-item {
+  list-style: upper-roman inside;
+}
+
+.page-nav {
+  color: #fff;
+  position: fixed;
+  inset: auto auto 6rem 4rem;
+}
+
+.page-nav-list {
+  display: grid;
+  gap: 2.5rem;
+  translate: -200%;
+  transition: translate var(--transition);
+}
+
+.page-nav-item:nth-child(2) {
+  translate: 15px;
+}
+
+.page-nav-item:nth-child(3) {
+  translate: 30px;
+}
+
+.page-nav-item:nth-child(4) {
+  translate: 45px;
+}
+
+.page-nav-link {
+  display: inline-flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.page-nav-item i {
+  font-size: 1.8rem;
+  color: var(--primary-clr);
+}
+
+.page-nav-item span {
+  font-size: 2rem;
+}
+
+/********************* The class 'nav-rotate' for animation *********************/
+
+.nav-rotate .hero {
+  rotate: -20deg;
+}
+
+.nav-rotate .circle {
+  rotate: -90deg;
+}
+
+.nav-rotate .page-nav-list {
+  translate: 0;
+}
